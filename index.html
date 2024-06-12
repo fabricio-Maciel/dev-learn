@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora | EBAC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.svg" alt="logotipo">
+  </header>
+  <div class="container">
+    <main>
+      <div class="container">
+        <h1>Calculadora de Médias</h1>
+        <form id="form-atividade">
+          <input id="nome-atividade" type="text" placeholder="Nome da atividade" required>
+          <input id="nota-atividade" type="number" min="0" max="10" placeholder="Nota" required>
+          <button type="submit" id="btn-add">Adicionar+</button>
+        </form>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome da atividade</th>
+              <th>Nota da atividade</th>
+              <th>Aprovado/Reprovado</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Média Final</td>
+              <td id="media-final-valor">---</td>
+              <td id="media-final-resultado">---</span></td>
+            </tr>
+          </tfoot>
+        </table>
+        <div class="tabela das atividades">
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
